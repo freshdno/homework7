@@ -1,4 +1,4 @@
-FROM maven:3.9.11-eclipse-temurin-17-noble
+FROM maven:3.9-eclipse-temurin-8
 
 RUN apt-get update && apt install git
 
