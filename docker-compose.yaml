@@ -1,0 +1,17 @@
+services:
+    tomcat:
+        image: tomcat:9.0.111-jre21-temurin-jammy
+        ports:
+            - '8080:8080'
+        volumes:
+            - app:/usr/local/tomcat/webapps
+        depends_on:
+            - maven
+    maven:
+        build:
+            context: ./maven
+        volumes:
+           - app:/root/homework7/target
+
+volumes:
+    app:
