@@ -11,7 +11,7 @@ services:
         build:
             context: ./maven
         volumes:
-           - app:/root/homework7/target
+           - app:/root/homework7/boxfuse-sample-java-war-hello/target
 
 volumes:
     app:
